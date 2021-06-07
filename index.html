@@ -9,8 +9,8 @@
     <link rel="apple-touch-icon" href="favicon/180.png">
     <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:wght@400;700&display=swap">
-    <link href="styles/normalize.css" rel="stylesheet">
-    <link href="styles/style.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body class="page-body">
@@ -44,7 +44,7 @@
             </ul>
             <nav class="main-navigation">
                 <ul class="site-navigation">
-                    <li><a class="main-page">Главная</a></li>
+                    <li><a>Главная</a></li>
                     <li><a href="blank.html">Компания</a></li>
                     <li><a href="сatalog.html">Каталог</a></li>
                     <li><a href="blank.html">Новости</a></li>
@@ -56,7 +56,7 @@
         </div>
     </header>
 
-    <main class="container">
+    <main>
         <h1>Интернет-магазин Техномарт</h1>
         <section class="products">
             <h2>Каталог</h2>
@@ -112,42 +112,42 @@
                 <h2>Популярные товары:</h2>
                 <a class="button" href="сatalog.html">Все популярные товары</a>
             </div>
-            <ul class="card">
+            <ul class="catalog-list">
                 <li>
-                    <article class="card-product">
+                    <article class="catalog-item">
                         <h3>Перфоратор BOSCH BFG 9000</h3>
                         <img src="images/snippet-32961.jpg" width="184" height="164" alt="Синий перфоратор BOSCH серебристой вставкой и мощным длинным сверлом">
-                        <div><a class="buy" href="сatalog.html">Купить</a>
+                        <div class="catalog-button"><a class="buy" href="сatalog.html">Купить</a>
                             <button type="button">В закладки</button></div>
                         <del>32500 Р.</del>
                         <p class="price">25500 Р.</p>
                     </article>
                 </li>
                 <li>
-                    <article class="card-product">
+                    <article class="catalog-item">
                         <h3>Перфоратор BOSCH BFG 3000</h3>
                         <img src="images/snippet-18927.jpg" width="127" height="112" alt="Синий перфоратор BOSCH с черными и красными вставками и маленьким сверлом">
-                        <div><a href="сatalog.html">Купить</a>
+                        <div class="catalog-button"><a href="сatalog.html">Купить</a>
                             <button type="button">В закладки</button></div>
                         <del>22500 Р.</del>
                         <p class="price">15500 Р.</p>
                     </article>
                 </li>
                 <li>
-                    <article class="card-product">
+                    <article class="catalog-item">
                         <h3>Перфоратор BOSCH BFG 6000</h3>
                         <img src="images/snippet-945.jpg" width="144" height="128" alt="Черно-синий перфоратор BOSCH с красными вставками и сверлом среднего размера">
-                        <div><a href="сatalog.html">Купить</a>
+                        <div class="catalog-button"><a href="сatalog.html">Купить</a>
                             <button type="button">В закладки</button></div>
                         <del>30500 Р.</del>
                         <p class="price">25500 Р.</p>
                     </article>
                 </li>
                 <li>
-                    <article class="card-product">
+                    <article class="catalog-item">
                         <h3>Перфоратор BOSCH BFG 2000</h3>
                         <img src="images/snippet-18927.jpg" width="127" height="112" alt="Синий перфоратор BOSCH с черными и красными вставками и маленьким сверлом">
-                        <div><a href="сatalog.html">Купить</a>
+                        <div class="catalog-button"><a href="сatalog.html">Купить</a>
                             <button type="button">В закладки</button></div>
                         <del>22500 Р.</del>
                         <p class="price">12500 Р.</p>
@@ -190,18 +190,17 @@
                 </li>
                 <li>
                     <a href="сatalog.html">
-                        <img src="images/metabo.png" width="204" height="69" alt="Логотип компании Metabo"></a>
+                        <img src="images/metabo.png " width="204" height="69" alt="Логотип компании Metabo"></a>
                 </li>
             </ul>
         </section>
         <section class="services">
             <h2>Сервисы</h2>
-            <p>Хороший интернет-магазин отличается от плохого не только ценами!</p>
-            <p>Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+            <p>Хороший интернет-магазин отличается от плохого не только ценами!<br> Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
             <ul class="menu-services">
-                <li class="services-delivery">Доставка</li>
-                <li class="services-guarantee">Гарантия</li>
-                <li class="services-credit">Кредит</li>
+                <li><button class="services-delivery" type="button">Доставка</button></li>
+                <li><button class="services-guarantee" type="button">Гарантия</button></li>
+                <li><button class="services-credit" type="button">Кредит</button></li>
             </ul>
             <ul class="description-services">
                 <li>
@@ -220,8 +219,8 @@
                 </li>
             </ul>
         </section>
-        <section class="about">
-            <h3>КОМПАНИЯ «Техномарт»</h3>
+        <section class="detailed">
+            <h2>КОМПАНИЯ «Техномарт»</h2>
             <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для <br> ремонта и строительства не оставит равнодушными любителей сэкономить на <br> гастарбайтерах.</p>
             <p>Мы можем доставить ваш товар в самые отдаленные точки России! <br> Техномарт работает со многими транспортными компаниями:</p>
             <ul class="delivery-companies">
@@ -232,9 +231,9 @@
             <a class="button" href="blank.html">Подробнее о компании</a>
         </section>
         <section class="location">
-            <h3>Контакты</h3>
-            <p>Вы можете забрать товар сами, заехав в наш офис:</p>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1996.822446556321!2d30.31522021559171!3d59.9682686666707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696315bc48a26c9%3A0x8a49e1486716f5b1!2z0L3QsNCxLiBQ0LXQutC4INCa0LDRgNC_0L7QstC60LgsIDXQnywg0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsIDE5NzAyMg!5e0!3m2!1sru!2sru!4v1622917762630!5m2!1sru!2sru"
+            <h2>Контакты</h2>
+            <p>Вы можете забрать товар сами,<br> заехав в наш офис:</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1996.822446556321!2d30.31522021559171!3d59.9682686666707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696315bc48a26c9%3A0x8a49e1486716f5b1!2z0L3QsNCxLiBQ0LXQutC4INCa0LDRgNC_0L7QstC60LgsIDXQnywg0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsIDE5NzAyMg!5e0!3m2!1sru!2sru!4v1622917762630!5m2!1sru!2sru "
                 width="300" height="158" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             <a class="button" href="blank.html">Заблудились? Напишите нам!</a>
         </section>
@@ -242,7 +241,7 @@
     <footer class="main-footer">
         <section class="main-footer-nav">
             <a class="main-footer-logo">
-                <img src="images/logo-technomart.svg" width="138" height="23" alt="Логотип интернет-магазина Техномарт">
+                <img src="images/logo-technomart.svg" width="138" height="23" alt="Логотип интернет-магазина Техномарт ">
             </a>
             <p>г. Санкт-Петербург, наб. Реки Карповки, 5 лит П<br> +7 800 555-86-28</p>
             <ul class="main-footer-menu-1">
