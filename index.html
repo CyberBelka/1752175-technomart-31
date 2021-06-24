@@ -21,6 +21,7 @@
                     <img src="images/logo-technomart.svg" width="108" height="18" alt="Логотип интернет-магазина Техномарт">
                 </a>
                 <form class="search-form" action="#" method="get">
+                    <button type="submit"></button>
                     <input class="search" type="search" placeholder="Поиск:">
                 </form>
                 <ul class="user-menu">
@@ -64,42 +65,45 @@
     <main>
         <h1 class="visually-hidden">Интернет-магазин Техномарт</h1>
         <section class="products container">
-            <h2>Каталог</h2>
+            <h2 class="visually-hidden">Каталог</h2>
             <ul class="products-list">
-                <li class="materials">
+                <li class="promo-item materials">
                     <h3>Материалы</h3>
                     <a class="button-products" href="сatalog.html">На любой вкус</a>
                 </li>
-                <li class="tool">
+                <li class="promo-item tool">
                     <h3>Инструмент</h3>
                     <a class="button-products" href="сatalog.html">На все случаи</a>
                 </li>
-                <li class="technics">
+                <li class="promo-item technics">
                     <h3>Техника</h3>
                     <a class="button-products" href="сatalog.html">Для стройки</a>
                 </li>
-                <li class="discount">
+                <li class="promo-item discount">
                     <h3>Скидки 50%</h3>
                     <a class="button-products" href="сatalog.html">На 350 товаров</a>
                 </li>
-                <li class="delivery">
+                <li class="promo-item delivery">
                     <h3>Доставка</h3>
                     <a class="button-products" href="#">Бесплатно</a>
                 </li>
                 <li class="slider-cell">
                     <ul class="slider">
-                        <li class="slides slide1">
-                            <!--<h3 class="slide-name">Перфораторы</h3>
-                            <p class="slide-text">Настоящие мужские игрушки</p>
-                            <a class="button" href="сatalog.html">Открыть каталог</a>-->
-                            <img class="about-img" src="images/perforator.jpg" width="620" height="266" alt="Мужчина в каске делает отверстия в стене с помощью перфоратора">
-                        </li>
-                        <!--<li class="slides slide2">
-                            <h3 class="slide-name">Дрели</h3>
-                            <p class="slide-text">Соседям на радость!</p>
+                        <li class="slide slide-active slide1">
+                            <div class="slide-descr">
+                                <h3 class="slide-name">Перфораторы</h3>
+                                <p class="slide-text">Настоящие мужские игрушки</p>
+                            </div>
                             <a class="button" href="сatalog.html">Открыть каталог</a>
-                            <img src="images/drill.jpg" width="620" height="266" alt="Мужчина в каске делает отверстия в стене с помощью дрели">
-                        </li>-->
+
+                        </li>
+                        <li class="slide slide2">
+                            <div class="slide-descr">
+                                <h3 class="slide-name">Дрели</h3>
+                                <p class="slide-text">Соседям на радость!</p>
+                            </div>
+                            <a class="button" href="сatalog.html">Открыть каталог</a>
+                        </li>
                     </ul>
                 </li>
             </ul>
@@ -122,8 +126,8 @@
                     <article class="catalog-item">
                         <h3>Перфоратор BOSCH BFG 9000</h3>
                         <img src="images/snippet-32961.jpg" width="184" height="164" alt="Синий перфоратор BOSCH серебристой вставкой и мощным длинным сверлом">
-                        <!--<div class="catalog-button"><a class="buy" href="сatalog.html">Купить</a>
-                            <button type="button">В закладки</button></div>-->
+                        <div class="catalog-button"><a class="buy" href="сatalog.html">Купить</a>
+                            <button type="button">В закладки</button></div>
                         <del>32500 Р.</del>
                         <p class="price">25500 Р.</p>
                     </article>
@@ -132,8 +136,8 @@
                     <article class="catalog-item">
                         <h3>Перфоратор BOSCH BFG 3000</h3>
                         <img src="images/snippet-18927.jpg" width="127" height="112" alt="Синий перфоратор BOSCH с черными и красными вставками и маленьким сверлом">
-                        <!--<div class="catalog-button"><a href="сatalog.html">Купить</a>
-                            <button type="button">В закладки</button></div>-->
+                        <div class="catalog-button"><a href="сatalog.html">Купить</a>
+                            <button type="button">В закладки</button></div>
                         <del>22500 Р.</del>
                         <p class="price">15500 Р.</p>
                     </article>
@@ -142,8 +146,8 @@
                     <article class="catalog-item">
                         <h3>Перфоратор BOSCH BFG 6000</h3>
                         <img src="images/snippet-945.jpg" width="144" height="128" alt="Черно-синий перфоратор BOSCH с красными вставками и сверлом среднего размера">
-                        <!--<div class="catalog-button"><a href="сatalog.html">Купить</a>
-                            <button type="button">В закладки</button></div>-->
+                        <div class="catalog-button"><a href="сatalog.html">Купить</a>
+                            <button type="button">В закладки</button></div>
                         <del>30500 Р.</del>
                         <p class="price">25500 Р.</p>
                     </article>
@@ -152,8 +156,8 @@
                     <article class="catalog-item">
                         <h3>Перфоратор BOSCH BFG 2000</h3>
                         <img src="images/snippet-18927.jpg" width="127" height="112" alt="Синий перфоратор BOSCH с черными и красными вставками и маленьким сверлом">
-                        <!--<div class="catalog-button"><a href="сatalog.html">Купить</a>
-                            <button type="button">В закладки</button></div>-->
+                        <div class="catalog-button"><a href="сatalog.html">Купить</a>
+                            <button type="button">В закладки</button></div>
                         <del>22500 Р.</del>
                         <p class="price">12500 Р.</p>
                     </article>
@@ -165,36 +169,36 @@
                 <h2>Популярные производители:</h2>
                 <a class="button" href="сatalog.html">Все производители</a></div>
             <ul class="manufacturers">
-                <li class="bosch">
-                    <a href="сatalog.html">
+                <li>
+                    <a href="#.html">
                         <img src="images/bosch.png" width="126" height="37" alt="Логотип компании BOSCH"></a>
                 </li>
-                <li class="makita">
-                    <a href="сatalog.html">
+                <li>
+                    <a href="#.html">
                         <img src="images/makita.png" width="123" height="40" alt="Логотип компании Makita"></a>
                 </li>
-                <li class="dewalt">
-                    <a href="сatalog.html">
+                <li>
+                    <a href="#.html">
                         <img src="images/dewalt.png" width="146" height="44" alt="Логотип компании DeWalt"></a>
                 </li>
-                <li class="interscol">
-                    <a href="сatalog.html">
+                <li>
+                    <a href="#.html">
                         <img src="images/interscol.png" width="200" height="75" alt="Логотип компании Интерскол"></a>
                 </li>
-                <li class="hitachi">
-                    <a href="сatalog.html">
+                <li>
+                    <a href="#.html">
                         <img src="images/hitachi.png" width="169" height="31" alt="Логотип компании Hitachi"></a>
                 </li>
-                <li class="lg">
-                    <a href="сatalog.html">
+                <li>
+                    <a href="#.html">
                         <img src="images/lg.png" width="121" height="73" alt="Логотип компании LG"></a>
                 </li>
-                <li class="aeg">
-                    <a href="сatalog.html">
+                <li>
+                    <a href="#.html">
                         <img src="images/aeg.png" width="151" height="96" alt="Логотип компании AEG"></a>
                 </li>
-                <li class="metabo">
-                    <a href="сatalog.html">
+                <li>
+                    <a href="#.html">
                         <img src="images/metabo.png " width="204" height="69" alt="Логотип компании Metabo"></a>
                 </li>
             </ul>
