@@ -15,8 +15,8 @@
 
 <body class="page-body">
     <header class="main-header">
-        <section class="main-header-top">
-            <div class="container">
+        <div class="main-header-top-bar">
+            <section class="main-header-top container">
                 <a class="main-header-logo" href="index.html">
                     <img src="images/logo-technomart.svg" width="108" height="18" alt="Логотип интернет-магазина Техномарт">
                 </a>
@@ -26,17 +26,17 @@
                 </form>
                 <ul class="user-menu">
                     <li>
-                        <a href="#">Закладки</a>
+                        <a class="bookmark" href="#">Закладки: 0</a>
                     </li>
                     <li>
-                        <a class="basket" href="#">Корзина</a>
+                        <a class="basket basket-catalog" href="#">Корзина: 10</a>
                     </li>
                     <li>
                         <a class="checkout" href="#">Оформить заказ</a>
                     </li>
                 </ul>
-            </div>
-        </section>
+            </section>
+        </div>
         <div class="header-bottom-bar">
             <div class="header-bottom container">
                 <p class="name">Интернет-магазин<br> строительных материалов<br> и инструментов для ремонта</p>
@@ -44,9 +44,11 @@
                     <p class="address">г. Санкт-Петербург, наб. Реки Карповки, 5 лит П</p>
                 </div>
                 <ul class="user-field">
-                    <li><a class="user" href="blank.html">Равшан Джамшутович</a></li>
-                    <li><a class="orders" href="blank.html">Мои заказы</a></li>
-                    <li><a class="personal" href="blank.html">Личный кабинет</a></li>
+                    <li><a class="user" href="#">Равшан Джамшутович</a></li>
+                    <div class="profile">
+                        <li><a class="order" href="#">Мои заказы</a></li>
+                        <li><a href="#">Личный кабинет</a></li>
+                    </div>
                 </ul>
                 <nav class="main-navigation">
                     <ul class="site-navigation">
@@ -72,46 +74,61 @@
             </ul>
             <section class="filters">
                 <h2>Фильтр:</h2>
-                <form class="filter" method="get" action="https://echo.htmlacademy.ru" oninput="priceoutput.value=pricecount.value">
-                    <fieldset>
-                        <legend>Цена:</legend>
-                        <input type="range" name="pricecount" id="pricecount" min="0" max="35000" step="100">
-                        <output name="priceoutput">30000</output>
+                <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+                    <fieldset class="filter-item">
+                        <legend class="range-price">Цена:</legend>
+                        <div class="range-filter">
+                            <div class="range-controls">
+                                <div class="scale">
+                                    <div class="bar"></div>
+                                </div>
+                                <div class="toggle toggle-min" tabindex="0"></div>
+                                <div class="toggle toggle-max" tabindex="0"></div>
+                            </div>
+                            <div class="price-controls">
+                                <label class="min-price">
+                                    <input type="number" name="min-price "value="0">
+                                  </label>
+                                <label class="max-price">
+                                    — <input type="number" name="max-price" value="30000">
+                                  </label>
+                            </div>
+                        </div>
                     </fieldset>
-                    <fieldset>
+                    <fieldset class="filter-manufacturers">
                         <legend>Производители:</legend>
                         <ul>
                             <li class="filter-option filter-checkbox">
-                                <input class="filter-input-checkbox filter-input" type="checkbox" name="bosch" id="filter-bosch" checked>
+                                <input class="filter-input-checkbox filter-input visually-hidden" type="checkbox" name="bosch" id="filter-bosch" checked>
                                 <label for="filter-bosch">Bosch</label>
                             </li>
                             <li class="filter-option filter-checkbox">
-                                <input type="checkbox" name="interscol" id="filter-interscol">
+                                <input class="filter-input-checkbox visually-hidden" type="checkbox" name="interscol" id="filter-interscol">
                                 <label for="filter-interscol">Интерскол</label>
                             </li>
                             <li class="filter-option filter-checkbox">
-                                <input type="checkbox" name="makita" id="filter-makita" checked>
+                                <input class="filter-input-checkbox visually-hidden" type="checkbox" name="makita" id="filter-makita" checked>
                                 <label for="filter-makita">Makita</label>
                             </li>
                             <li class="filter-option filter-checkbox">
-                                <input type="checkbox" name="dewolt" id="filter-dewolt">
-                                <label for="filter-dewolt">Dewolt</label>
+                                <input class="filter-input-checkbox visually-hidden" type="checkbox" name="dewalt" id="filter-dewolt">
+                                <label for="filter-dewalt ">Dewalt</label>
                             </li>
                             <li class="filter-option filter-checkbox">
-                                <input type="checkbox" name="hitachi" id="filter-hitachi">
+                                <input class="filter-input-checkbox visually-hidden" type="checkbox" name="hitachi" id="filter-hitachi">
                                 <label for="filter-hitachi">Hitachi</label>
                             </li>
                         </ul>
                     </fieldset>
-                    <fieldset>
+                    <fieldset class="filter-energy">
                         <legend>Питание:</legend>
                         <ul>
                             <li class="filter-option filter-radio">
-                                <input class="filter-input-radio filter-input" type="radio" name="battery" id="filter-battery" checked>
+                                <input class="filter-input-radio filter-inputx visually-hidden" type="radio" name="battery" id="filter-battery" checked>
                                 <label for="filter-battery">Аккумуляторные</label>
                             </li>
                             <li class="filter-option filter-radio">
-                                <input class="filter-input-radio filter-input" type="radio" name="chain" id="filter-chain">
+                                <input class="filter-input-radio filter-input visually-hidden" type="radio" name="chain" id="filter-chain">
                                 <label for="filter-chain">Сетевые</label>
                             </li>
                         </ul>
@@ -134,14 +151,14 @@
                         <article class="catalog-item">
                             <h3>Перфоратор BOSCH BFG 6000</h3>
                             <img src="images/snippet-945.jpg" width="144" height="128" alt="Черно-синий перфоратор BOSCH с красными вставками и сверлом среднего размера">
-                            <div class="catalog-button"><a href="сatalog.html">Купить</a>
+                            <div class="catalog-button "><a href="сatalog.html">Купить</a>
                                 <button type="button">В закладки</button></div>
                             <del>30500 P.</del>
                             <p class="price">25500 P.</p>
                         </article>
                     </li>
                     <li>
-                        <article class="catalog-item">
+                        <article class="catalog-item ">
                             <h3>Перфоратор BOSCH BFG 6000</h3>
                             <img src="images/snippet-945.jpg" width="144" height="128" alt="Черно-синий перфоратор BOSCH с красными вставками и сверлом среднего размера">
                             <div class="catalog-button"><a href="сatalog.html">Купить</a>
@@ -181,7 +198,7 @@
                         </article>
                     </li>
                     <li>
-                        <article class="catalog-item">
+                        <article class="catalog-item ">
                             <h3>Перфоратор BOSCH BFG 2000</h3>
                             <img src="images/snippet-18927.jpg" width="127" height="112" alt="Синий перфоратор BOSCH с черными и красными вставками и маленьким сверлом">
                             <div class="catalog-button"><a href="сatalog.html">Купить</a>
@@ -210,7 +227,7 @@
                         </article>
                     </li>
                     <li>
-                        <article class="catalog-item">
+                        <article class="catalog-item ">
                             <h3>Перфоратор BOSCH BFG 2000</h3>
                             <img src="images/snippet-18927.jpg" width="127" height="112" alt="Синий перфоратор BOSCH с черными и красными вставками и маленьким сверлом">
                             <div class="catalog-button"><a href="сatalog.html">Купить</a>
@@ -256,7 +273,7 @@
                     <ul class="main-footer-menu-1">
                         <li><a href="#">Компания</a></li>
                         <li><a href="#">Новости</a></li>
-                        <li><a href="catalog.html">Каталог</a></li>
+                        <li><a href="catalog.html ">Каталог</a></li>
                         <li><a href="#">Доставка</a></li>
                         <li><a href="#">Контакты</a></li>
                     </ul>
@@ -274,7 +291,7 @@
                 <p>© 2010–2021 Компания «Техномарт»<br> Все права защищены</p>
 
                 <ul class="footer-social">
-                    <li><a class="social-button" href="#"><span class="visually-hidden">Вконтакте</span><img src="images/icon-vk.svg" alt="Вконтакте"></a></li>
+                    <li><a class="social-button" href="# "><span class="visually-hidden">Вконтакте</span><img src="images/icon-vk.svg" alt="Вконтакте"></a></li>
                     <li><a class="social-button" href="#"><span class="visually-hidden">Фейсбук</span><img src="images/icon-fb.svg" alt="Фейсбук"></a></li>
                     <li><a class="social-button" href="#"><span class="visually-hidden">Инстаграм</span><img src="images/icon-insta.svg" alt="Инстаграм"></a></li>
                 </ul>
