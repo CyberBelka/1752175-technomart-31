@@ -21,8 +21,13 @@
                     <img src="images/logo-technomart.svg" width="108" height="18" alt="Логотип интернет-магазина Техномарт">
                 </a>
                 <form class="search-form" action="#" method="get">
-                    <button type="submit"></button>
                     <input class="search" type="search" placeholder="Поиск:">
+                    <button type="submit">
+                        <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M13.458 12.044L17 15.586L15.586 17L12.044 13.458C10.782 14.421 9.21 15 7.5 15C3.35786 15 0 11.6421 0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5C15.0001 9.14309 14.4581 10.7403 13.458 12.044ZM7.5 2C4.467 2 2 4.467 2 7.5C2.00331 10.5362 4.4638 12.9967 7.5 13C10.532 13 13 10.532 13 7.5C13 4.467 10.532 2 7.5 2Z" fill="currentColor"/>
+                            </svg>
+                        <span class="visually-hidden">Найти</span>
+                    </button>
                 </form>
                 <ul class="user-menu">
                     <li>
@@ -46,20 +51,25 @@
                     <p class="address">г. Санкт-Петербург, наб. Реки Карповки, 5 лит П</p>
                 </div>
                 <ul class="entrance">
-                    <li><a class="enter" href="#">Войти</a></li>
+                    <li>
+                        <a class="enter" href="#">
+                            <svg width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14.1667 8.5L5.71429 0V6H0V11H5.71429V17L14.1667 8.5Z" fill="#C5C5C5"/>
+                            <path d="M16.1771 15.01H11.3895V17H16.1771C18.2514 17 19.0381 15.19 19.0619 13.974V3.028C19.0381 1.811 18.2514 0 16.1771 0H11.3895V1.99H16.1771C16.9762 1.99 17.1219 2.671 17.1391 3.047V13.951C17.1229 14.327 16.9762 15.01 16.1771 15.01Z" fill="#C5C5C5"/>
+                            </svg>Войти</a>
+                    </li>
                     <li><a class="registration" href="#">Регистрация</a></li>
                 </ul>
-                <nav class="main-navigation">
-                    <ul class="site-navigation">
-                        <li><a>Главная</a></li>
-                        <li><a href="#">Компания</a></li>
-                        <li><a href="catalog.html">Каталог</a></li>
-                        <li><a href="#">Новости</a></li>
-                        <li><a href="#">Спецпредложения</a></li>
-                        <li><a href="#">Доставка</a></li>
-                        <li><a href="#">Контакты</a></li>
-                    </ul>
-                </nav>
+                <ul class="site-navigation">
+                    <li><a>Главная</a></li>
+                    <li><a href="#">Компания</a></li>
+                    <li><a href="catalog.html">Каталог</a></li>
+                    <li><a href="#">Новости</a></li>
+                    <li><a href="#">Спецпредложения</a></li>
+                    <li><a href="#">Доставка</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+
             </div>
         </div>
     </header>
@@ -69,7 +79,7 @@
         <section class="products container">
             <h2 class="visually-hidden">Каталог</h2>
             <ul class="products-list">
-                <li class="promo-item materials new">
+                <li class="promo-item materials catalog-item-new">
                     <h3>Материалы</h3>
                     <a class="button-products" href="catalog.html">На любой вкус</a>
                 </li>
@@ -97,7 +107,6 @@
                                 <p class="slide-text">Настоящие мужские игрушки</p>
                             </div>
                             <a class="button" href="catalog.html">Открыть каталог</a>
-
                         </li>
                         <li class="slide slide2">
                             <div class="slide-descr">
@@ -107,16 +116,17 @@
                             <a class="button" href="catalog.html">Открыть каталог</a>
                         </li>
                     </ul>
+                    <div class="slider-controls">
+                        <button class="next-slide" type="button" aria-label="Предыдущий слайд"></button>
+                        <button class="previous-slide" type="button" aria-label="Следующий слайд"></button>
+                    </div>
+                    <ul class="slide-dots">
+                        <li><button class="current" type="button" aria-label="Первый слайд"></button></li>
+                        <li><button type="button" aria-label="Второй слайд"></button></li>
+                    </ul>
                 </li>
             </ul>
-            <!--<div class="slider-controls">
-                <button class="next-slide" type="button">Следующий слайд</button>
-                <button class="previous-slide" type="button">Предыдущий слайд</button>
-            </div>
-            <ul class="slide-dots">
-                <li><button type="button">Слайд 1</button></li>
-                <li><button type="button">Слайд 2</button></li>
-            </ul>-->
+
         </section>
         <section class="container">
             <div class="popular-products">
@@ -127,40 +137,48 @@
                 <li>
                     <article class="catalog-item">
                         <h3>Перфоратор BOSCH BFG 9000</h3>
-                        <img src="images/snippet-32961.jpg" width="184" height="164" alt="Синий перфоратор BOSCH серебристой вставкой и мощным длинным сверлом">
+                        <div class="catalog-img">
+                            <img src="images/snippet-32961.jpg" width="184" height="164" alt="Синий перфоратор BOSCH серебристой вставкой и мощным длинным сверлом">
+                        </div>
                         <div class="catalog-button"><a href="catalog.html">Купить</a>
                             <button type="button">В закладки</button></div>
-                        <del>32500 Р.</del>
+                        <p class="old-price">32500 Р.</p>
                         <p class="price">25500 Р.</p>
                     </article>
                 </li>
                 <li>
-                    <article class="catalog-item">
+                    <article class="catalog-item catalog-item-new">
                         <h3>Перфоратор BOSCH BFG 3000</h3>
-                        <img src="images/snippet-18927.jpg" width="127" height="112" alt="Синий перфоратор BOSCH с черными и красными вставками и маленьким сверлом">
+                        <div class="catalog-img">
+                            <img src="images/snippet-18927.jpg" width="127" height="112" alt="Синий перфоратор BOSCH с черными и красными вставками и маленьким сверлом">
+                        </div>
                         <div class="catalog-button"><a href="catalog.html">Купить</a>
                             <button type="button">В закладки</button></div>
-                        <del>22500 Р.</del>
+                        <p class="old-price">22500 Р.</p>
                         <p class="price">15500 Р.</p>
                     </article>
                 </li>
                 <li>
                     <article class="catalog-item">
                         <h3>Перфоратор BOSCH BFG 6000</h3>
-                        <img src="images/snippet-945.jpg" width="144" height="128" alt="Черно-синий перфоратор BOSCH с красными вставками и сверлом среднего размера">
+                        <div class="catalog-img">
+                            <img src="images/snippet-945.jpg" width="144" height="128" alt="Черно-синий перфоратор BOSCH с красными вставками и сверлом среднего размера">
+                        </div>
                         <div class="catalog-button"><a href="catalog.html">Купить</a>
                             <button type="button">В закладки</button></div>
-                        <del>30500 Р.</del>
+                        <p class="old-price">30500 Р.</p>
                         <p class="price">25500 Р.</p>
                     </article>
                 </li>
                 <li>
-                    <article class="catalog-item">
+                    <article class="catalog-item catalog-item-new">
                         <h3>Перфоратор BOSCH BFG 2000</h3>
-                        <img src="images/snippet-18927.jpg" width="127" height="112" alt="Синий перфоратор BOSCH с черными и красными вставками и маленьким сверлом">
+                        <div class="catalog-img">
+                            <img src="images/snippet-18927.jpg" width="127" height="112" alt="Синий перфоратор BOSCH с черными и красными вставками и маленьким сверлом">
+                        </div>
                         <div class="catalog-button"><a href="catalog.html">Купить</a>
                             <button type="button">В закладки</button></div>
-                        <del>22500 Р.</del>
+                        <p class="old-price">22500 Р.</p>
                         <p class="price">12500 Р.</p>
                     </article>
                 </li>
@@ -208,7 +226,6 @@
 
         <section class="services-bar">
             <div class="services container">
-
                 <h2>Сервисы</h2>
                 <p>Хороший интернет-магазин отличается от плохого не только ценами!<br> Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
                 <div class="list-services">
@@ -218,16 +235,16 @@
                         <li><button class="services-credit" type="button">Кредит</button></li>
                     </ul>
                     <ul class="description-services">
-                        <li class="description  description-delivery">
+                        <li class="description description-active description-delivery">
                             <h3>Доставка</h3>
                             <p>Мы с удовольствием доставим ваш товар прямо <br> к вашему подъезду совершенно бесплатно! <br> Ведь мы неплохо заработаем, <br> поднимая его на ваш этаж!</p>
                         </li>
-                        <li class="description  description-guarantee">
+                        <li class="description description-guarantee">
                             <h3>Гарантия</h3>
                             <p>Если купленный у нас товар поломается или заискрит, <br>а также в случае пожара, спровоцированного его <br> возгоранием, вы всегда можете быть уверены в нашей <br> гарантии. Мы обменяем сгоревший товар на новый. <br> Дом уж
                                 восстановите как-нибудь сами.</p>
                         </li>
-                        <li class="description description-active description-credit">
+                        <li class="description description-credit">
                             <h3>Кредит</h3>
                             <p>Залезть в долговую яму стало проще!</p>
                             <p>Кредитные консультанты придут вам на помощь.</p>
@@ -320,7 +337,7 @@
                 <div class="footer-copyright">
                     <p>Обратная связь:<br> <a href="#">mail@htmlacademy.ru</a>
                     </p>
-                    <p>Разработано —<br> <a href="https://htmlacademy.ru">htmlacademy.ru</a>
+                    <p>Разработано —<br> <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
                     </p>
                 </div>
             </section>
