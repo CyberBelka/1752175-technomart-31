@@ -10,7 +10,7 @@
     <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:wght@400;700&display=swap">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
 </head>
 
 <body class="page-body">
@@ -22,11 +22,11 @@
                 </a>
                 <form class="search-form" action="#" method="get">
                     <input class="search" type="search" placeholder="Поиск:">
-                    <button type="submit">
-                        <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M13.458 12.044L17 15.586L15.586 17L12.044 13.458C10.782 14.421 9.21 15 7.5 15C3.35786 15 0 11.6421 0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5C15.0001 9.14309 14.4581 10.7403 13.458 12.044ZM7.5 2C4.467 2 2 4.467 2 7.5C2.00331 10.5362 4.4638 12.9967 7.5 13C10.532 13 13 10.532 13 7.5C13 4.467 10.532 2 7.5 2Z" fill="currentColor"/>
-                            </svg>
-                        <span class="visually-hidden">Найти</span>
+                    <button type="submit" aria-label="Найти">
+                        <svg aria-hidden="true" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M13.458 12.044L17 15.586L15.586 17L12.044 13.458C10.782 14.421 9.21 15 7.5 15C3.35786 15 0 11.6421 0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5C15.0001 9.14309 14.4581 10.7403 13.458 12.044ZM7.5 2C4.467 2 2 4.467 2 7.5C2.00331 10.5362 4.4638 12.9967 7.5 13C10.532 13 13 10.532 13 7.5C13 4.467 10.532 2 7.5 2Z" fill="currentColor"/>
+                        </svg>
+                        
                     </button>
                 </form>
                 <ul class="user-menu">
@@ -53,7 +53,7 @@
                 <ul class="entrance">
                     <li>
                         <a class="enter" href="#">
-                            <svg width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg aria-hidden="true" width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M14.1667 8.5L5.71429 0V6H0V11H5.71429V17L14.1667 8.5Z" fill="#C5C5C5"/>
                             <path d="M16.1771 15.01H11.3895V17H16.1771C18.2514 17 19.0381 15.19 19.0619 13.974V3.028C19.0381 1.811 18.2514 0 16.1771 0H11.3895V1.99H16.1771C16.9762 1.99 17.1219 2.671 17.1391 3.047V13.951C17.1229 14.327 16.9762 15.01 16.1771 15.01Z" fill="#C5C5C5"/>
                             </svg>Войти</a>
@@ -69,7 +69,6 @@
                     <li><a href="#">Доставка</a></li>
                     <li><a href="#">Контакты</a></li>
                 </ul>
-
             </div>
         </div>
     </header>
@@ -140,7 +139,7 @@
                         <div class="catalog-img">
                             <img src="images/snippet-32961.jpg" width="184" height="164" alt="Синий перфоратор BOSCH серебристой вставкой и мощным длинным сверлом">
                         </div>
-                        <div class="catalog-button"><a href="catalog.html">Купить</a>
+                        <div class="catalog-button"><a href="#">Купить</a>
                             <button type="button">В закладки</button></div>
                         <p class="old-price">32500 Р.</p>
                         <p class="price">25500 Р.</p>
@@ -148,11 +147,11 @@
                 </li>
                 <li>
                     <article class="catalog-item catalog-item-new">
-                        <h3>Перфоратор BOSCH BFG 3000</h3>
+                        <h3>Перфоратор BOSCH BFG</h3>
                         <div class="catalog-img">
                             <img src="images/snippet-18927.jpg" width="127" height="112" alt="Синий перфоратор BOSCH с черными и красными вставками и маленьким сверлом">
                         </div>
-                        <div class="catalog-button"><a href="catalog.html">Купить</a>
+                        <div class="catalog-button"><a href="#">Купить</a>
                             <button type="button">В закладки</button></div>
                         <p class="old-price">22500 Р.</p>
                         <p class="price">15500 Р.</p>
@@ -164,7 +163,7 @@
                         <div class="catalog-img">
                             <img src="images/snippet-945.jpg" width="144" height="128" alt="Черно-синий перфоратор BOSCH с красными вставками и сверлом среднего размера">
                         </div>
-                        <div class="catalog-button"><a href="catalog.html">Купить</a>
+                        <div class="catalog-button"><a href="#">Купить</a>
                             <button type="button">В закладки</button></div>
                         <p class="old-price">30500 Р.</p>
                         <p class="price">25500 Р.</p>
@@ -176,7 +175,7 @@
                         <div class="catalog-img">
                             <img src="images/snippet-18927.jpg" width="127" height="112" alt="Синий перфоратор BOSCH с черными и красными вставками и маленьким сверлом">
                         </div>
-                        <div class="catalog-button"><a href="catalog.html">Купить</a>
+                        <div class="catalog-button"><a href="#">Купить</a>
                             <button type="button">В закладки</button></div>
                         <p class="old-price">22500 Р.</p>
                         <p class="price">12500 Р.</p>
@@ -254,7 +253,6 @@
                 </div>
             </div>
         </section>
-
         <div class="detailed-location container">
             <section class="detailed">
                 <h2>КОМПАНИЯ «Техномарт»</h2>
@@ -312,7 +310,7 @@
                     <li>
                         <a class="social-button" href="#">
                             <span class="visually-hidden">Вконтакте</span>
-                            <svg width="26" height="15" viewBox="0 0 26 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg aria-hidden="true" width="26" height="15" viewBox="0 0 26 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M15.5403 11.7281C16.4609 11.4384 17.6395 13.6406 18.8943 14.4834C19.836 15.1219 20.5573 14.9841 20.5573 14.9841L23.9017 14.9372C23.9017 14.9372 25.6495 14.8322 24.8232 13.4803C24.7549 13.3678 24.3389 12.4781 22.334 10.6472C20.2376 8.73186 20.5217 9.04218 23.0456 5.73093C24.5835 3.71249 25.1988 2.47968 25.0062 1.95468C24.8213 1.44936 23.6918 1.58061 23.6918 1.58061L19.9237 1.60593C19.5568 1.60686 19.2458 1.71749 19.1042 2.08874C19.1013 2.09249 18.5062 3.65061 17.7127 4.9753C16.0362 7.77749 15.3669 7.92655 15.0896 7.75124C14.4531 7.3453 14.6139 6.1228 14.6139 5.25374C14.6139 2.5378 15.0299 1.4053 13.7992 1.1128C13.388 1.0153 13.0876 0.951552 12.0389 0.942177C10.6985 0.922489 9.56027 0.942177 8.91508 1.25061C8.48656 1.45968 8.15819 1.91811 8.35753 1.94436C8.6079 1.97718 9.1693 2.09436 9.46975 2.49374C9.8559 3.01124 9.84434 4.17093 9.84434 4.17093C9.84434 4.17093 10.0649 7.36874 9.32434 7.7653C8.8159 8.03718 8.12064 7.48218 6.62516 4.9378C5.86153 3.63655 5.28471 2.19843 5.28471 2.19843C5.28471 2.19843 5.17301 1.93124 4.97079 1.78499C4.73005 1.61155 4.39301 1.55624 4.39301 1.55624L0.816563 1.57874C0.816563 1.57874 0.27923 1.59374 0.0818227 1.82436C-0.0934366 2.02874 0.0673782 2.45061 0.0673782 2.45061C0.0673782 2.45061 2.86864 8.90155 6.04064 12.1509C8.94879 15.1341 12.2537 14.9362 12.2537 14.9362H13.7511C13.7511 14.9362 14.2027 14.8856 14.4338 14.6437C14.6495 14.4187 14.6399 13.9959 14.6399 13.9959C14.6399 13.9959 14.61 12.0187 15.5403 11.7281Z" fill="white"/>
                             </svg>
                         </a>
@@ -320,7 +318,7 @@
                     <li>
                         <a class="social-button" href="#">
                             <span class="visually-hidden">>Фейсбук</span>
-                            <svg width="12" height="22" viewBox="0 0 12 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg aria-hidden="true" width="12" height="22" viewBox="0 0 12 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M12 4V0H8C5.79086 0 4 1.79086 4 4V8H0V12H4V22H8V12H12V8H8V4H12Z" fill="white"/>
                             </svg>
                         </a>
@@ -328,7 +326,7 @@
                     <li>
                         <a class="social-button" href="#">
                             <span class="visually-hidden">Инстаграм</span>
-                            <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg aria-hidden="true" width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M3 0H18C19.65 0 21 1.35 21 3V18C21 19.65 19.65 21 18 21H3C1.35 21 0 19.65 0 18V3C0 1.35 1.35 0 3 0ZM14 10.5C14 8.57 12.43 7 10.5 7C8.57 7 7 8.57 7 10.5C7 12.43 8.57 14 10.5 14C12.43 14 14 12.43 14 10.5ZM3 18V9H4.181C4.0626 9.49127 4.00186 9.99467 4 10.5C4 14.0899 6.91015 17 10.5 17C14.0899 17 17 14.0899 17 10.5C16.9986 9.99464 16.9379 9.49118 16.819 9H18V18H3ZM14 7H18V3H14V7Z" fill="white"/>
                             </svg>
                         </a>
@@ -344,31 +342,42 @@
         </div>
     </footer>
 
-    <section class="modal feedback">
-        <h2>Обратная связь</h2>
+    <section class="modal modal-feedback">
+        <h2 class="visually-hidden">Обратная связь</h2>
         <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
-            <p class="feedback-item">
-                <label for="name">Ваше имя:</label>
-                <input id="name" type="text" name="name" placeholder="Имя Фамилия">
-            </p>
-            <p class="feedback-item">
-                <label for="email">Ваш e-mail:</label>
-                <input id="email" type="email" name="email" placeholder="email@example.com">
-            </p>
-            <p class="feedback-item">
-                <label for="letter">Текст письма:</label>
-                <textarea id="letter" name="letter">В свободной форме</textarea>
-            </p>
-            <div class="modal-buttom">
-                <button class="button send" type="submit">Отправить</button>
+            <div class="feedback-item">
+                <p class="feedback-item-name">
+                    <label for="name">Ваше имя:</label>
+                    <input id="name" type="text" name="name" placeholder="Имя Фамилия">
+                </p>
+                <p class="feedback-item-email">
+                    <label for="email">Ваш e-mail:</label>
+                    <input id="email" type="email" name="email" placeholder="email@example.com">
+                </p>
+                <p class="feedback-item-letter">
+                    <label for="letter">Текст письма:</label>
+                    <textarea id="letter" name="letter">В свободной форме</textarea>
+                </p>
             </div>
-            <button class="modal-close" type="button">Закрыть</button>
+            <div class="feedback-button-bar">
+                <button class="button" type="submit">Отправить</button>
+            </div>
         </form>
+        <button class="modal-close" type="button" aria-label="Закрыть">
+            <svg aria-hidden="true" width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13.273 10.5L20.695 3.07799C21.084 2.68899 21.084 2.05299 20.695 1.66399L19.336 0.304995C18.947 -0.0840054 18.311 -0.0840054 17.922 0.304995L10.5 7.72699L3.07799 0.304995C2.68899 -0.0840054 2.05299 -0.0840054 1.66399 0.304995L0.304995 1.66399C-0.0840054 2.05299 -0.0840054 2.68899 0.304995 3.07799L7.72699 10.5L0.305995 17.922C-0.0830054 18.311 -0.0830054 18.947 0.305995 19.336L1.66499 20.695C2.05399 21.084 2.68999 21.084 3.07899 20.695L10.501 13.273L17.923 20.695C18.312 21.084 18.948 21.084 19.337 20.695L20.696 19.336C21.085 18.947 21.085 18.311 20.696 17.922L13.273 10.5Z" fill="#EE3643"/>
+                </svg>
+        </button>
     </section>
-    <section class="modal map">
-        <h2>Карта</h2>
-
-        <button class="modal-close" type="button">Закрыть</button>
+    <section class="modal modal-map">
+        <h2 class="visually-hidden">Карта</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1996.822446556321!2d30.31522021559171!3d59.9682686666707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696315bc48a26c9%3A0x8a49e1486716f5b1!2z0L3QsNCxLiBQ0LXQutC4INCa0LDRgNC_0L7QstC60LgsIDXQnywg0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsIDE5NzAyMg!5e0!3m2!1sru!2sru!4v1622917762630!5m2!1sru!2sru "
+            width="943" height="449" style="border:0;" allowfullscreen="Офис компании по адресу набережная реки Карповки, 5, литера П, Санкт-Петербург"></iframe>
+        <button class="modal-close" type="button" aria-label="Закрыть">
+                <svg aria-hidden="true" width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13.273 10.5L20.695 3.07799C21.084 2.68899 21.084 2.05299 20.695 1.66399L19.336 0.304995C18.947 -0.0840054 18.311 -0.0840054 17.922 0.304995L10.5 7.72699L3.07799 0.304995C2.68899 -0.0840054 2.05299 -0.0840054 1.66399 0.304995L0.304995 1.66399C-0.0840054 2.05299 -0.0840054 2.68899 0.304995 3.07799L7.72699 10.5L0.305995 17.922C-0.0830054 18.311 -0.0830054 18.947 0.305995 19.336L1.66499 20.695C2.05399 21.084 2.68999 21.084 3.07899 20.695L10.501 13.273L17.923 20.695C18.312 21.084 18.948 21.084 19.337 20.695L20.696 19.336C21.085 18.947 21.085 18.311 20.696 17.922L13.273 10.5Z" fill="#EE3643"/>
+                </svg>
+        </button>
     </section>
 </body>
 
