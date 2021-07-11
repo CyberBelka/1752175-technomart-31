@@ -272,7 +272,7 @@
                 <p>Вы можете забрать товар сами,<br> заехав в наш офис:</p>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1996.822446556321!2d30.31522021559171!3d59.9682686666707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696315bc48a26c9%3A0x8a49e1486716f5b1!2z0L3QsNCxLiBQ0LXQutC4INCa0LDRgNC_0L7QstC60LgsIDXQnywg0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsIDE5NzAyMg!5e0!3m2!1sru!2sru!4v1622917762630!5m2!1sru!2sru "
                     width="300" height="158" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                <a class="button" href="#">Заблудились? Напишите нам!</a>
+                <a class="button feedback-link" href="feedback.html">Заблудились? Напишите нам!</a>
             </section>
         </div>
     </main>
@@ -348,11 +348,11 @@
             <div class="feedback-item">
                 <p class="feedback-item-name">
                     <label for="name">Ваше имя:</label>
-                    <input id="name" type="text" name="name" placeholder="Имя Фамилия">
+                    <input class="feedback-user" id="name" type="text" name="name" placeholder="Имя Фамилия">
                 </p>
                 <p class="feedback-item-email">
                     <label for="email">Ваш e-mail:</label>
-                    <input id="email" type="email" name="email" placeholder="email@example.com">
+                    <input class="feedback-email" id="email" type="email" name="email" placeholder="email@example.com">
                 </p>
                 <p class="feedback-item-letter">
                     <label for="letter">Текст письма:</label>
@@ -379,6 +379,7 @@
                 </svg>
         </button>
     </section>
+    <script src="js/feedback.js"></script>
 </body>
 
 </html>
