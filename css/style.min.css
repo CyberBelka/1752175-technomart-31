@@ -1,3 +1,18 @@
+@-webkit-keyframes bounce {
+    0% {
+        transform: translateY(-2000px)
+    }
+    70% {
+        transform: translateY(30px)
+    }
+    90% {
+        transform: translateY(-10px)
+    }
+    to {
+        transform: translateY(0)
+    }
+}
+
 @keyframes bounce {
     0% {
         transform: translateY(-2000px)
@@ -10,6 +25,26 @@
     }
     to {
         transform: translateY(0)
+    }
+}
+
+@-webkit-keyframes shake {
+    0%,
+    to {
+        transform: translateX(0)
+    }
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        transform: translateX(-10px)
+    }
+    20%,
+    40%,
+    60%,
+    80% {
+        transform: translateX(10px)
     }
 }
 
@@ -92,6 +127,7 @@ body {
     background-color: var(--basic-white);
     min-height: 100%;
     display: grid;
+    grid-template-rows: -webkit-min-content 1fr -webkit-min-content;
     grid-template-rows: min-content 1fr min-content;
     align-content: start
 }
@@ -113,6 +149,7 @@ img {
     border: 0;
     padding: 0;
     white-space: nowrap;
+    -webkit-clip-path: inset(100%);
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden
@@ -207,6 +244,24 @@ img {
 .search:focus+button {
     color: var(--basic-red);
     opacity: 1
+}
+
+.search::-webkit-input-placeholder {
+    font-family: "Cuprum", "Arial", sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    font-style: normal;
+    font-weight: 400;
+    color: var(--basic-white)
+}
+
+.search::-moz-placeholder {
+    font-family: "Cuprum", "Arial", sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    font-style: normal;
+    font-weight: 400;
+    color: var(--basic-white)
 }
 
 .search::placeholder {
@@ -694,11 +749,11 @@ img {
 }
 
 .slide1 {
-    background: var(--filter-disabled) url(/images/perforator.jpg) no-repeat
+    background: var(--filter-disabled) url(../images/perforator.jpg) no-repeat
 }
 
 .slide2 {
-    background: var(--filter-disabled) url(/images/drill.jpg) no-repeat
+    background: var(--filter-disabled) url(../images/drill.jpg) no-repeat
 }
 
 .slide {
@@ -856,6 +911,7 @@ img {
 .catalog-list-main {
     display: grid;
     grid-template-columns: repeat(4, 220px);
+    -moz-column-gap: 20px;
     column-gap: 20px;
     margin: 0 0 70px;
     padding: 0;
@@ -1535,6 +1591,8 @@ img {
     position: relative;
     display: block;
     cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
     user-select: none
 }
 
@@ -1636,6 +1694,7 @@ img {
 .filter-sorting {
     display: flex;
     justify-content: flex-end;
+    -moz-column-gap: 68px;
     column-gap: 68px;
     width: 540px;
     margin: 0;
@@ -1660,7 +1719,9 @@ img {
 .filter-sorting a:hover {
     color: var(--basic-greylight);
     text-decoration: underline;
+    -webkit-text-decoration-color: var(--basic-red);
     text-decoration-color: var(--basic-red);
+    -webkit-text-decoration-style: dotted;
     text-decoration-style: dotted;
     text-underline-position: under
 }
@@ -1795,6 +1856,7 @@ img {
     margin: 37px 0 0;
     padding: 0;
     list-style: none;
+    -moz-column-gap: 59px;
     column-gap: 59px;
     width: 577px
 }
@@ -1924,10 +1986,12 @@ img {
 
 .modal-show {
     display: block;
+    -webkit-animation: bounce .6s;
     animation: bounce .6s
 }
 
 .modal-error {
+    -webkit-animation: shake .6s;
     animation: shake .6s
 }
 

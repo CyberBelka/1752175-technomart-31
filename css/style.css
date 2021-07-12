@@ -684,11 +684,11 @@ img {
 }
 
 .slide1 {
-    background: var(--filter-disabled) url("/images/perforator.jpg") no-repeat;
+    background: var(--filter-disabled) url("../images/perforator.jpg") no-repeat;
 }
 
 .slide2 {
-    background: var(--filter-disabled) url("/images/drill.jpg") no-repeat;
+    background: var(--filter-disabled) url("../images/drill.jpg") no-repeat;
 }
 
 .slide {
