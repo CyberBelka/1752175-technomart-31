@@ -144,7 +144,7 @@ img {
     opacity: 0.3;
 }
 
-.search-form button svg {
+.search-form svg {
     position: absolute;
     left: 17px;
 }
@@ -178,6 +178,7 @@ img {
     font-style: normal;
     font-weight: normal;
     color: var(--basic-white);
+    padding-top: 9px;
 }
 
 .search::-webkit-search-decoration,
@@ -355,38 +356,40 @@ img {
     line-height: 21px;
 }
 
-.entrance a {
+.enter,
+.registration {
     display: block;
     color: var(--basic-black);
     background-color: var(--basic-white);
     text-align: center;
 }
 
-.entrance a:hover {
-    color: var(--basic-red);
+.enter svg {
+    color: var(--basic-greylight);
+    position: absolute;
+    top: 14px;
+    left: 18px;
 }
 
-.entrance a:hover svg path {
-    fill: var(--basic-grey);
+.enter:hover svg {
+    color: var(--basic-grey);
+}
+
+.enter:active svg {
+    color: var(--basic-greylight);
+}
+
+.entrance a:hover {
+    color: var(--basic-red);
 }
 
 .entrance a:active {
     color: var(--basic-greylight);
 }
 
-.entrance a:active svg path {
-    fill: var(--basic-greylight);
-}
-
 .enter {
     padding: 12px 27px 12px 45px;
     position: relative;
-}
-
-.enter svg {
-    position: absolute;
-    top: 14px;
-    left: 18px;
 }
 
 .registration {
@@ -415,29 +418,37 @@ img {
     text-align: center;
 }
 
-.user a {
+.user-icon,
+.user-icon:hover {
     color: var(--basic-black);
 }
 
-.user a:active {
+.user-icon:active {
     color: var(--basic-greylight);
 }
 
-.user a:hover svg path {
-    fill: var(--basic-grey);
+.user-icon svg,
+.output-icon svg {
+    color: var(--basic-greylight);
 }
 
-.user a:active svg path {
-    fill: var(--basic-greylight);
+.user-icon:hover svg,
+.output-icon:hover svg {
+    color: var(--basic-grey);
 }
 
-.user .user-icon svg {
+.user-icon:active svg,
+.output-icon:active svg {
+    color: var(--basic-greylight);
+}
+
+.user-icon svg {
     position: absolute;
     top: 13px;
     left: 15px;
 }
 
-.user .output-icon svg {
+.output-icon svg {
     position: absolute;
     top: 13px;
     right: 17px;
@@ -1074,7 +1085,7 @@ img {
     opacity: 0.5;
 }
 
-.manufacturers li a {
+.manufacturers a {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1176,7 +1187,8 @@ img {
     padding: 0;
     padding-left: 22px;
     width: 240px;
-    height: 61px;
+    padding-top: 14px;
+    padding-bottom: 17px;
     display: block;
     text-align: left;
 }
@@ -1385,10 +1397,8 @@ img {
 .breadcrumbs {
     grid-column: 1 / -1;
     order: -2;
-    display: flex;
     margin: 0;
     margin-top: 20px;
-    margin-left: 55px;
     padding: 0;
     list-style: none;
     display: flex;
@@ -1397,31 +1407,23 @@ img {
 
 .breadcrumbs li {
     position: relative;
-    margin-right: 42px;
-}
-
-.breadcrumbs li:first-child::before {
-    content: "";
-    position: absolute;
-    top: 4px;
-    left: -55px;
-    width: 14px;
-    height: 12px;
-    background-image: url("../images/icon-home.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
+    margin-right: 41px;
 }
 
 .breadcrumbs li::after {
     content: "";
     position: absolute;
-    top: 4px;
+    top: 3px;
     left: -26px;
     width: 8px;
     height: 12px;
     background-image: url("../images/icon-right-small.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
+}
+
+.breadcrumbs li:first-child::after {
+    display: none;
 }
 
 .breadcrumbs a {
@@ -1652,6 +1654,7 @@ img {
     text-transform: uppercase;
     background-color: var(--basic-white);
     border: 1px solid var(--catalog-button);
+    cursor: pointer;
 }
 
 .results {
@@ -1781,8 +1784,9 @@ img {
     border: 1px solid var(--basic-red);
 }
 
-.pagination-list li:last-child a {
+.pagination-item:last-child a {
     padding: 8px 30px 10px;
+    margin-right: 0;
 }
 
 .pagination-item-current a,
